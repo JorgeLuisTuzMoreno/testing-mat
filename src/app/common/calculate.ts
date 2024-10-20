@@ -24,4 +24,13 @@ export class Calculate {
       return sumXX;
     }
   
-}
+    // Nueva función sumYY
+    static sumYY(yValues: number[], avgY: number): number {
+      let sumYY = 0;
+      for (let i = 0; i < yValues.length; i++) {
+        sumYY += (yValues[i] - avgY) * (yValues[i] - avgY);
+      }
+      return sumYY;
+    }
+  }
+  
